@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "SqlServerName": {
-            "value": ""
+            "value": "pspsqldb04032020"
         },
         "AdminUserName": {
-            "value": ""
+            "value": "sqluberadmin"
         },
         "AdminPassword": {
             "reference": {
