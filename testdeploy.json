@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "UserPassword": {
-            "type": "string",
+            "type": "Securestring",
             "metadata": {
                 "description": "enter user password"
             }
