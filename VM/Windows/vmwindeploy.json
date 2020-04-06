@@ -22,7 +22,7 @@
         }
     },
     "variables": {
-        "StorageAccount": "[uniqueString('pspstorage')]",
+        "StorageAccount": "[uniqueString('12345')]",
         "PublicIP": "[concat(parameters('VMName'),'-PublicIP')]",
         "vNet": "[concat(parameters('VMName'),'-vNet001')]",
         "Subnet": "[concat(variables('vNet'),'-subnet')]",
