@@ -5,7 +5,7 @@ param (
     [string]
     $TemplatePath
 )
-$JsonFiles = Get-ChildItem -Path $TemplatePath -Filter *.json | Where-Object {$_.Name -notlike "*.parameters.json"}
+$JsonFiles = Get-ChildItem -Path $TemplatePath -Filter *.json -Recurse | Where-Object {$_.Name -notlike "*.parameters.json"}
 
 
 Describe "Security check" {
