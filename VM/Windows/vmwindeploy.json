@@ -118,7 +118,7 @@
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('StorageAccount'))]",
-                "[resourceId('Microsoft.Network/networkInterfaces', variables('Nic'))]"
+                "[resourceId('Microsoft.Network/networkInterfaces', variables('NIC'))]"
             ],
             "tags": {
                 "displayName": "[parameters('VmName')]"
