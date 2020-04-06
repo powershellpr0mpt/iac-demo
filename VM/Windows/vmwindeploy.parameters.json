@@ -2,14 +2,19 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "VmName": {
-            "value": "## TO BE DEFINED ##"
+        "VMName": {
+            "value": "MyWin2019"
         },
-        "AdminUserName": {
-            "value": "## TO BE DEFINED ##"
+        "adminUsername": {
+            "value": "pspadmin"
         },
-        "AdminPassword": {
-            "value": "## TO BE DEFINED ##"
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/c45efd47-a460-497a-b835-2996959fd5be/resourceGroups/PSP-Keyvault/providers/Microsoft.KeyVault/vaults/PSP-KeyVault001"
+                },
+                "secretName": "PSP-Admin"
+            }
         }
     }
 }
