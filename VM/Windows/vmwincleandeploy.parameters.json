@@ -2,9 +2,6 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "VMName": {
-            "value": "MyWin2019"
-        },
         "adminUsername": {
             "value": "pspadmin"
         },
@@ -15,6 +12,18 @@
                 },
                 "secretName": "PSP-Admin"
             }
+        },
+        "dnsLabelPrefix": {
+            "value": "pspaz500demo"
+        },
+        "windowsOSVersion": {
+            "value": "2019-Datacenter"
+        },
+        "vmSize": {
+            "value": "Standard_A2m_v2"
+        },
+        "location": {
+            "value": "[resourceGroup().location]"
         }
     }
 }
