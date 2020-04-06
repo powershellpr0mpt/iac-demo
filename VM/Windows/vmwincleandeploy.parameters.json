@@ -21,9 +21,6 @@
         },
         "vmSize": {
             "value": "Standard_A2m_v2"
-        },
-        "location": {
-            "value": "[resourceGroup().location]"
         }
     }
 }
